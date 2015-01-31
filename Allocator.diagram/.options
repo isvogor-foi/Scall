@@ -1,0 +1,7 @@
+# Tracing options for the Allocator.diagram plug-in
+
+# Common issues
+Allocator.diagram/debug=false
+
+# Visual IDs
+Allocator.diagram/debug/visualID=false
