@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Allocator/src" modelPluginID="Allocator" modelName="Allocator_metamodel"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>allocator_metamodel.ecore</foreignModel>
+  <genPackages prefix="AllocatorMetamodel" disposableProviderFactory="true" ecorePackage="allocator_metamodel.ecore#/">
+    <genClasses ecoreClass="allocator_metamodel.ecore#//System">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute allocator_metamodel.ecore#//System/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference allocator_metamodel.ecore#//System/platforms"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference allocator_metamodel.ecore#//System/softwares"/>
+    </genClasses>
+    <genClasses ecoreClass="allocator_metamodel.ecore#//Software">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute allocator_metamodel.ecore#//Software/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference allocator_metamodel.ecore#//Software/SWNodes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference allocator_metamodel.ecore#//Software/SWLinks"/>
+    </genClasses>
+    <genClasses ecoreClass="allocator_metamodel.ecore#//Hardware">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute allocator_metamodel.ecore#//Hardware/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference allocator_metamodel.ecore#//Hardware/HWNodes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference allocator_metamodel.ecore#//Hardware/HWLinks"/>
+    </genClasses>
+    <genClasses ecoreClass="allocator_metamodel.ecore#//SWNode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute allocator_metamodel.ecore#//SWNode/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference allocator_metamodel.ecore#//SWNode/SWResources"/>
+    </genClasses>
+    <genClasses ecoreClass="allocator_metamodel.ecore#//HWNode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute allocator_metamodel.ecore#//HWNode/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference allocator_metamodel.ecore#//HWNode/HWResources"/>
+    </genClasses>
+    <genClasses ecoreClass="allocator_metamodel.ecore#//SWLink">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute allocator_metamodel.ecore#//SWLink/Name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference allocator_metamodel.ecore#//SWLink/SWDesc"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference allocator_metamodel.ecore#//SWLink/SWSrc"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute allocator_metamodel.ecore#//SWLink/Unit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute allocator_metamodel.ecore#//SWLink/Value"/>
+    </genClasses>
+    <genClasses ecoreClass="allocator_metamodel.ecore#//HWLink">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute allocator_metamodel.ecore#//HWLink/Name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference allocator_metamodel.ecore#//HWLink/HWDesc"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference allocator_metamodel.ecore#//HWLink/HWSrc"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute allocator_metamodel.ecore#//HWLink/Unit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute allocator_metamodel.ecore#//HWLink/Value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute allocator_metamodel.ecore#//HWLink/Bandwith"/>
+    </genClasses>
+    <genClasses ecoreClass="allocator_metamodel.ecore#//Resource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute allocator_metamodel.ecore#//Resource/Name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute allocator_metamodel.ecore#//Resource/Unit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute allocator_metamodel.ecore#//Resource/Value"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/Allocator/model/allocator_metamodel.genmodel
+gmf_dashboard/domainModel=platform\:/resource/Allocator/model/allocator_metamodel.ecore
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/Allocator/model/allocator_metamodel.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/Allocator/model/allocator_metamodel.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/Allocator/model/allocator_metamodel.gmftool
