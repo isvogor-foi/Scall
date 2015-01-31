@@ -3,6 +3,8 @@ The marriage of component based software engineering (CBSE) and heterogeneous co
 The task of placing (allocating, mapping) is not straightforward and fits into NP hard problems. Having a system composed of n components and m computational units one deals with m^n possible allocations making the allocation task laborious and not feasible in polynomial time (for large n and m). A tool which supports and automates this process is essential.
 SCALL: Software Component Allocator - considers multiple resource constraints and types to reduce design space by providing a system designer with allocation alternatives. SCALL is an early prototype Eclipse plugin developed for our research on multiple-objective component allocation on a heterogeneous platform. The tool currently supports model creation and visualization, pairwise resource comparison and automatic component allocation.
 
+ - Allocator.plugin is the actual Eclipse plugin, rest of the projects are just GMF generated stuff. Allocator contains the metamodel.
+
 ####Features
 
  + Model creation - User can simultaneously model software and hardware architecture of the system. For software components, user can add resources and model their communication channels. Within the same view, the same operation can be done for computational units.The System consists of Hardware and Software compartments. Hardware compartment hosts HWNodes which are connected via HWLinks. Like nodes, links also provide some resources.
