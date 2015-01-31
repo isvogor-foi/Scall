@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="Allocator.plugin.contribution1"
+            objectClass="org.eclipse.core.resources.IFile">
+         <menu
+               id="Allocator.plugin.menu1"
+               label="Component allocation"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="allocator.plugin.popup.actions.InitializeAction"
+               id="Allocator.plugin.analyze"
+               label="Initialize model"
+               menubarPath="Allocator.plugin.menu1/group1">
+         </action>
+         <action
+               class="allocator.plugin.popup.actions.DisplayMatricesAction"
+               id="Allocator.plugin.initialize"
+               label="Display model matrices"
+               menubarPath="Allocator.plugin.menu1/group1">
+         </action>
+         <action
+               class="allocator.plugin.popup.actions.RunAllocatorAction"
+               id="Allocator.plugin.allocate"
+               label="Run allocation"
+               menubarPath="Allocator.plugin.menu1/group1">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>

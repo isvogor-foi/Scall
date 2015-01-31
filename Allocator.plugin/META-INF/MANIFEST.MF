@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Plugin
+Bundle-SymbolicName: Allocator.plugin;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: allocator.plugin.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ Allocator.edit;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: org.eclipse.emf.common.command,
+ org.eclipse.emf.edit.domain,
+ org.eclipse.emf.edit.provider
+Bundle-ClassPath: lib/gson-2.2.4.jar,
+ .
+
